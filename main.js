@@ -13,7 +13,7 @@ app.on('ready', function() {
 
     opggWindow = new BrowserWindow({
         height: height * 0.8,
-        width: width * 0.6,
+        width: width * 0.8,
         frame: false,
         transparent: false,
         icon: path.join(__dirname, 'app/build/icon.png'),
