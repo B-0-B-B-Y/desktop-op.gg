@@ -17,7 +17,7 @@
   "main": "./main.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/B-0-B-B-Y/desktop-facebook-messenger.git"
+    "url": "https://github.com/B-0-B-B-Y/desktop-op.gg.git"
   },
   "build": {
     "appId": "desktop.op.gg",
