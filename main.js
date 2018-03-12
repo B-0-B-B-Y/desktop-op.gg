@@ -9,7 +9,7 @@ let opggWindow = null;
 
 app.on('ready', function() {
 
-  const {width, height} = electron.screen.getPrimaryDisplay().workAreaSize
+  const {width, height} = electron.screen.getPrimaryDisplay().size
 
     opggWindow = new BrowserWindow({
         height: height * 0.8,
