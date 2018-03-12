@@ -23,7 +23,7 @@
     "appId": "desktop.op.gg",
     "productName": "OP.GG Desktop",
     "mac": {
-      "category": "Social Networking",
+      "category": "Utility",
       "icon": "app/build/icon.icns"
     },
     "win": {
