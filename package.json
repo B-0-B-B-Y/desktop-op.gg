@@ -47,5 +47,7 @@
     "electron-prebuilt": "^1.4.13",
     "electron-rebuild": "^1.7.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "electron-ad-blocker": "^0.2.0"
+  }
 }
