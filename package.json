@@ -1,21 +1,18 @@
 {
-  "name": "desktop-facebook-messenger",
-  "version": "1.0.1",
+  "name": "desktop-op.gg",
+  "version": "1.0.0",
   "author": "Bob Naydenov <bob.naydenov@hotmail.com>",
-  "description": "An elegant desktop version of Facebook's messenger.",
+  "description": "An elegant desktop version of OP.GG.",
   "license": "GPL-3.0",
   "keywords": [
     "desktop",
     "app",
-    "facebook",
-    "messenger",
-    "social",
-    "network",
-    "chat",
-    "real-time",
-    "friends",
-    "connect",
-    "message"
+    "opgg",
+    "league of legends",
+    "league",
+    "of",
+    "legends",
+    "statistics"
   ],
   "main": "./main.js",
   "repository": {
@@ -23,8 +20,8 @@
     "url": "https://github.com/B-0-B-B-Y/desktop-facebook-messenger.git"
   },
   "build": {
-    "appId": "desktop.facebook.messenger",
-    "productName": "Messenger Desktop",
+    "appId": "desktop.op.gg",
+    "productName": "OP.GG Desktop",
     "mac": {
       "category": "Social Networking",
       "icon": "app/build/icon.icns"
