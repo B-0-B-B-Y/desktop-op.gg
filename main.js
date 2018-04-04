@@ -1,5 +1,5 @@
 const electron = require('electron')
-const {app, BrowserWindow, ipcMain} = require('electron')
+const {app, BrowserWindow, ipcMain, Menu} = require('electron')
 const { blockWindowAds, adBlocker } = require('electron-ad-blocker');
 const path = require('path')
 const url = require('url')
@@ -27,9 +27,32 @@ app.on('ready', function() {
       logger: console,
     }
 
-    //opggWindow.webContents.openDevTools()
-
     blockWindowAds(opggWindow, options);
+
+    const menuTemplate = [
+      {
+        label: 'Cut',
+        accelerator: 'Cmd+X',
+        selector: 'cut:'
+      },
+      {
+        label: 'Copy',
+        accelerator: 'Cmd+C',
+        selector: 'copy:'
+      },
+      {
+        label: 'Paste',
+        accelerator: 'Cmd+V',
+        selector: 'paste:'
+      },
+      {
+        label: 'Select All',
+        accelerator: 'Cmd+A',
+        selector: 'selectAll:'
+      }]
+
+      const menu = new Menu.buildFromTemplate(menuTemplate)
+      Menu.setApplicationMenu(menu)
 
 })
 
