@@ -46,3 +46,10 @@ document.getElementById('menu').onmousemove = function () {
 document.getElementById('menu').onmouseup = function () {
     unFocus()
 }
+
+webview.addEventListener('new-window', (e) => {
+    const protocol = require('url').parse(e.url).protocol
+    if (protocol === 'http:' || protocol === 'https:') {
+      webview.loadURL(e.url);
+    }
+  })
