@@ -1,5 +1,6 @@
 const electron = require('electron')
 const {app, BrowserWindow, ipcMain, Menu} = require('electron')
+const { autoUpdater } = require('electron-updater')
 const { blockWindowAds, adBlocker } = require('electron-ad-blocker');
 const path = require('path')
 const url = require('url')
@@ -8,6 +9,8 @@ const fs = require('fs')
 let opggWindow = null;
 
 app.on('ready', function() {
+
+  autoUpdater.checkForUpdatesAndNotify()
 
   const {width, height} = electron.screen.getPrimaryDisplay().size
 
